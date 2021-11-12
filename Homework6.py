@@ -8,7 +8,7 @@ from sklearn.datasets import make_blobs
 from sklearn.cluster import KMeans
 
 st.title("K-Means")
-slider = st.slider("Iterations",1,20)
+slider = st.slider("Iterations",1,100)
 
 X, _ = make_blobs(n_samples=1100, centers=5, n_features=2, random_state = 1)
 df = pd.DataFrame(X, columns = list("ab"))
